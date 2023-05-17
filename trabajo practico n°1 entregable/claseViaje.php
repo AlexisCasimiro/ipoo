@@ -85,7 +85,7 @@ class Viaje{
             "apellido"=>$apellido,
             "dni"=>$dni,
         ];
-        array_push($this->datosPasajero,$pasajero);
+        array_push($this->getDatPasajero(),$pasajero);
         $cantPasajeros=$this->getPasajeros($this->cantPasajeros)+1;
         $this->setPasajeros($cantPasajeros);
     }
